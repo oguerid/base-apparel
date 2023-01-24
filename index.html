@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Base Apparel coming soon page</title>
-  <link rel="stylesheet" href="style.css">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-</head>
-<body>
-<header class="logo">
-  <img src="./images/logo.svg" alt="">
-</header>
-<div class="img">
-  <img src="./images/hero-mobile.jpg" alt="">
-</div>
-<section class="main">
-  <div class="main__title"> We're coming soon</div>
-<div class="main__text">Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.</div>
-  <div class="main__email-area">
-    <input type="text" class="main__email" placeholder=" Email Address">
-    <img src="./images/icon-error.svg" class="main__error-icon" alt="">
-    <img src="./images/icon-arrow.svg" class="main__error-arrow icon" alt="">
-
-  </div>
-  <div class="main__email-incorrect">Please provide a valid email</div>
-
-</section>
-
-
- 
-  
-
- 
-  
- 
-</body>
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+   
+    <div class="container">
+      <section class="main">
+      <header class="header" >
+        <img src="./images/logo.svg" class="logo" alt="" />
+      </header>
+      <div class="img"></div>
+     
+        <div class="main__title">We're <span class="main__title-bold">coming soon</span></div>
+        <div class="main__text">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </div>
+        <div class="main__email-area">
+          <input type="text" class="main__email" placeholder=" Email Address" />
+          <img src="./images/icon-error.svg" class="main__error-icon" alt="" />
+          <div class="main__error-arrow-btn">
+            <img src="./images/icon-arrow.svg" class="arrow-icon" alt="" />
+          </div>
+        </div>
+        <div class="main__email-incorrect">Please provide a valid email</div>
+      </section>
+      <div class="bg__img"></div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
 </html>
