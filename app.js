@@ -3,6 +3,11 @@ let btn = document.querySelector(".main__error-arrow-btn");
 let icon = document.querySelector(".main__error-icon");
 let respond = document.querySelector(".main__email-incorrect");
 
+
+
+
+
+
 function ValidateEmail(inputText) {
   let mailformat = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
   if (inputText.value.match(mailformat)) {

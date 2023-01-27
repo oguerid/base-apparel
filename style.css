@@ -13,7 +13,6 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-
 }
 .header {
   width: 100px;
@@ -21,7 +20,7 @@ body {
 }
 
 .container {
-    margin: 0 auto;
+  margin: 0 auto;
   max-width: 375px;
   background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 }
@@ -39,7 +38,7 @@ body {
 .main__title {
   font-size: 3.5rem;
   text-transform: uppercase;
-  letter-spacing: 1.7px;
+  letter-spacing: 0.106rem;
   line-height: 1;
 
   font-weight: 100;
@@ -72,6 +71,7 @@ input[type="text"] {
   border-radius: 23px;
   font-size: 1.2rem;
   background-color: hsl(0, 58%, 94%);
+  width: 80%;
 }
 .main__email::placeholder {
   color: hsl(0, 36%, 70%);
@@ -79,22 +79,23 @@ input[type="text"] {
 .main__error-icon {
   position: absolute;
   top: 15px;
-  left: 220px;
+  right: 40%;
   visibility: hidden;
 }
-.main__error-icon--active{
-    visibility: visible;
+.main__error-icon--active {
+  visibility: visible;
 }
 
 .main__error-arrow-btn {
   position: absolute;
   top: 0;
-  left: 268px;
+  right: 17%;
   height: 55px;
   width: 80px;
   padding: 0.9rem 1rem;
   background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   border-radius: 20px;
+  cursor: pointer;
 }
 .main__error-arrow-btn:hover {
   background: linear-gradient(
@@ -111,8 +112,8 @@ input[type="text"] {
   color: red;
   visibility: hidden;
 }
-.main__email-incorrect--active{
-    visibility:visible;
+.main__email-incorrect--active {
+  visibility: visible;
 }
 @media screen and (min-width: 960px) {
   body {
@@ -135,11 +136,14 @@ input[type="text"] {
     width: 60%;
   }
   .main__title {
-    font-size: 4rem;
+    font-size: 5rem;
     max-width: 140px;
+    letter-spacing: 0.2em;
     padding: 6rem 6rem 0.5rem;
+    width: 60%;
   }
   .main__text {
+    font-size: 1.2rem;
     padding-left: 5rem;
     max-width: 500px;
     text-align: left;
@@ -147,6 +151,10 @@ input[type="text"] {
 
   .main__email-area {
     margin-left: 4.5rem;
+  }
+  .main__error-icon {
+  right: 30%;
+   
   }
 
   .bg__img {
@@ -161,6 +169,5 @@ input[type="text"] {
   .main__email-incorrect {
     padding-left: 6rem;
     /* margin-top: 6.2rem; */
-   
   }
 }
